@@ -1,0 +1,25 @@
+programa {
+  funcao inicio() {
+    inteiro i, num, menor, maior, pos_maior, pos_menor
+
+    para(i=1; i<=10; i++){
+      escreva("Insira o ",i,"° número: ")
+      leia(num)
+
+      se(i==1){
+        menor=num
+        maior=num
+        pos_maior=i 
+        pos_menor=i
+      }senao se(num<menor){
+        menor=num
+        pos_menor=i
+      }senao se(num>maior){
+        maior=num
+        pos_maior=i
+      }
+    }
+    escreva("O menor número é: ",menor," na ",pos_menor,"° posição")
+    escreva("\nO maior número é: ",maior," na ",pos_maior,"° posição")
+  }
+}
