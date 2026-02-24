@@ -1,0 +1,24 @@
+programa {
+  inclua biblioteca Matematica --> m
+  funcao inicio() {
+    real f, c
+    caracter ent
+
+    ent = 's'
+    enquanto(ent=='s' ou ent=='S'){
+
+    
+
+      escreva("Insira graus Fahrenheit: ")
+      leia(f)
+
+      c=(f-32)/1.8
+
+      c = m.arredondar (c, 2)
+
+      escreva(f,"° Fahrenheit = ",c,"° Celsius\n")
+      escreva("Deseja continuar? (s ou n) ")
+      leia(ent)
+    }
+  }
+}
