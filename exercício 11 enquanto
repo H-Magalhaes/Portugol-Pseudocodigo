@@ -1,0 +1,24 @@
+programa {
+  funcao inicio() {
+
+    inteiro i, idade, num_idade=0, t_idade=0
+    real media
+
+    escreva("Número de idades a inserir: ")
+    leia(num_idade)
+
+    i=1
+
+    enquanto(i<=num_idade){
+      escreva("Insira ", i, "° idade: ")
+      leia(idade)
+      t_idade = t_idade + idade
+      i++
+    }
+
+    media = t_idade / num_idade
+
+    escreva("O total de idades é: ", t_idade)
+    escreva("\nA média de idades é: ", media)
+  }
+}
