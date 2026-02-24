@@ -1,0 +1,25 @@
+programa {
+  funcao inicio() {
+    inteiro a, b, i, aux
+
+    escreva("Insira primeiro número: ")
+    leia(a)
+
+    escreva("Insira segundo número: ")
+    leia(b)
+
+    se(a>b){
+      aux=b
+      b=a 
+      a=aux
+    }
+    
+    escreva("numeros impares\n")
+    para(i=a; i<=b; i++){
+      se(i%2!=0){
+        escreva(i,"\n")
+      }
+    }
+
+    }
+  }
