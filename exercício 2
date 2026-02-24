@@ -1,0 +1,14 @@
+programa {
+  funcao inicio() {
+    real num1, num2, media
+
+    escreva("Insira primeiro número: ")
+    leia(num1)
+
+    escreva("Insira segundo número: ")
+    leia(num2)
+
+    media = (num1 + num2) / 2
+    escreva("A média dos números é: ",media)
+  }
+}
