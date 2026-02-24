@@ -1,0 +1,33 @@
+programa {
+  funcao inicio() {
+
+    inteiro a, b, aux, i
+    caracter ent
+
+    ent = 's'
+    enquanto(ent=='s'ou ent=='S'){
+
+    escreva("Insira primeiro número: ")
+    leia(a)
+
+    escreva("Insira segundo número: ")
+    leia(b)
+
+    se(a>b){
+      aux=a
+      a=b
+      b=aux
+    }
+    escreva("Números ímpares entre ", a, " e ", b, "\n")
+
+    para(i=a; i<=b; i++){
+      se(i%2!=0){
+        escreva(i,"\n")
+      }
+    }
+    escreva("Deseja continuar s ou n ")
+    leia(ent)
+
+    }
+  }
+}
