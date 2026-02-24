@@ -1,0 +1,35 @@
+programa {
+  funcao inicio() {
+    real nota1, nota2, nota3, cf
+
+    faca{
+      escreva("Insira primeira nota: ")
+      leia(nota1)
+        se(nota1>20 ou nota1<0)
+          escreva("Nota inválida\n A nota deve estar compreendida entre 0 e 20 valores\n")
+    } enquanto(nota1>20 ou nota1<0)
+    
+    
+    faca{
+      escreva("Insira segunda nota: ")
+      leia(nota2)
+        se(nota2>20 ou nota2<0)
+          escreva("Nota inválida\n A nota deve estar compreendida entre 0 e 20 valores\n")
+    } enquanto(nota2>20 ou nota2<0)
+
+    faca{
+      escreva("Insira terceira nota: ")
+      leia(nota3)
+        se(nota3>20 ou nota3<0)
+          escreva("Nota inválida\n A nota deve estar compreendida entre 0 e 20 valores\n")
+    } enquanto(nota3>20 ou nota3<0)
+
+    cf = nota1 * 0.2 + nota2 * 0.5 + nota3 * 0.3
+      se(cf>=10)
+        escreva("Aprovado com a classificação final de :",cf, " valores")
+      senao
+        escreva("Reprovado com a classificação final de :",cf, " valores")
+
+
+  }
+}
