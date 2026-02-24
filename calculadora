@@ -1,0 +1,47 @@
+programa {
+  funcao inicio() {
+    inteiro op
+    real num1, num2
+    caracter ent
+    ent = 's'
+    enquanto (ent == 's' ou ent == 'S'){
+
+    escreva ("Insira número 1: ")
+    leia (num1)
+    escreva ("Insira número 2: ")
+    leia (num2)
+
+    escreva ("\n -------- Menu-------- \n")
+    escreva ("1 - Soma\n")
+    escreva ("2 - subtraÇão\n")
+    escreva ("3 - MultiplicaÇão\n")
+    escreva ("4 - Divisão\n")
+    leia (op)
+
+    escolha (op)
+    {
+      caso 1:
+      escreva ("A soma é: ", num1 + num2)
+      pare
+
+      caso 2:
+      escreva ("A subtração é: ", num1 - num2)
+      pare
+
+      caso 3:
+      escreva ("A multiplicação é: ", num1 * num2)
+      pare
+
+      caso 4:
+      escreva ("A divisão é: ", num1 / num2)
+      pare
+
+      caso contrario: 
+        escreva("Opção errada")
+    }
+      escreva ("\ndeseja continuar? ")
+      leia (ent)
+      
+      }
+    }   
+  }
