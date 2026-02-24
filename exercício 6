@@ -1,0 +1,22 @@
+programa {
+  funcao inicio() {
+    real teste1, teste2, teste3, media
+
+    escreva("Insira nota do primeiro teste: ")
+    leia(teste1)
+    
+    escreva("Insira nota do segundo teste: ")
+    leia(teste2)
+
+    escreva("Insira nota do terceiro teste: ")
+    leia(teste3)
+
+    media = (teste1 + teste2 + teste3) / 3
+
+    se(media>=9.5)
+      escreva("Aprovado com a média de: ",media, " valores")
+    senao
+      escreva("Reprovado com a média de: ",media, "valores")
+
+  }
+}
