@@ -1,0 +1,41 @@
+programa {
+  funcao inicio() {
+    real mat, prog, sis, media
+
+    faca{
+      escreva("Insira a nota de matemática: ")
+      leia(mat)
+        se(mat<0 ou mat>20)
+        escreva("Nota inválida, a nota deve estar compreendida entre 0 e 20\n")
+    }enquanto(mat<0 ou mat>20)
+    
+    faca{
+      escreva("Insira a nota de programação: ")
+      leia(prog)
+        se(prog<0 ou prog>20)
+        escreva("Nota inválida, a nota deve estar compreendida entre 0 e 20\n")
+    }enquanto(prog<0 ou prog>20)
+
+    faca{
+      escreva("insira a nota de sistemas de informação: ")
+      leia(sis)
+        se(sis<0 ou sis>20)
+        escreva("Nota inválida, a nota deve estar compreendida entre 0 e 20\n")
+    }enquanto(sis<0 ou sis>20)
+
+    media = (mat + prog + sis) / 3
+
+    se(mat<10 ou prog<10 ou sis<10){
+      escreva("Reprovado com a média de ", media, " valores")
+    }
+
+    senao se(mat>=16 e prog>=16 ou mat>=16 e sis>=16 ou prog>=16 e sis>=16){
+      escreva("Aprovado com distinção com a média de ", media, " valores")
+    }
+
+      senao{
+        escreva("Aprovado com a média de ", media, " valores")
+      }
+    
+  }
+}
